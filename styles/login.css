@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: rgb(95, 10, 135);
+  background: linear-gradient(160deg, rgb(95, 10, 135) 0%, rgb(164, 80, 139) 83%);
+  width: 100vw;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.rgb-thing {
+  background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+  background-size: 400%;
+  width: 400px;
+  height: 6px;
+  text-align: center;
+  animation: roll 10s linear infinite;
+}
+
+section#login {
+  background: #222;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 0;
+  position: relative;
+}
+section#login span.title {
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  top: 5px;
+}
+section#login img {
+  max-width: 200px;
+  height: auto;
+}
+section#login form {
+  text-align: center;
+  width: 300px;
+}
+section#login form .input-area {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+section#login form .input-area label {
+  color: white;
+  margin-bottom: 5px;
+}
+section#login form .input-area input {
+  background: transparent;
+  height: 30px;
+  border: rgb(213, 39, 255) 1px solid;
+  border-radius: 5px;
+}
+section#login form span {
+  color: white;
+  font-size: 12px;
+}
+section#login form span a {
+  color: white;
+}
+section#login form button {
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  padding: 5px 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+section#login form button.submit {
+  background: rgb(213, 39, 255);
+}
+section#login form button.discord {
+  background: #7289da;
+}
+
+@keyframes roll {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}/*# sourceMappingURL=login.css.map */

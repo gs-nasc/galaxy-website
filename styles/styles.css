@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: rgb(95, 10, 135);
+  background: linear-gradient(160deg, rgb(95, 10, 135) 0%, rgb(164, 80, 139) 83%);
+  width: 100vw;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  background: #222;
+  width: 70%;
+  border-radius: 22px;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 10px;
+}
+header .logo-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .logo-area img {
+  max-width: 100px;
+}
+header .avatar-area {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+header .avatar-area .cash {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  font-size: 12px;
+}
+header .avatar-area .profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid rgb(213, 39, 255);
+}
+header .avatar-area .profile-pic img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+header .menu-area ul {
+  padding: 0;
+  margin: 0;
+}
+header .menu-area ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 10px;
+  color: #f1f1f1;
+}
+
+section {
+  background: #222;
+  width: 70%;
+  border-radius: 22px;
+  padding: 25px 50px;
+  margin-top: 140px;
+  min-height: 35vw;
+  position: relative;
+}
+section .toast {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  left: 300px;
+  bottom: 350px;
+  display: none;
+  position: absolute;
+}
+section .toast ul li {
+  list-style-type: none;
+  font-size: 12px;
+}
+section h1 {
+  color: #f1f1f1;
+  cursor: pointer;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+section .infos {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+section .infos .card {
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 14px;
+}
+section .infos .card.blue {
+  background: #A7C7E7;
+}
+section .infos .card.purple {
+  background: #C3B1E1;
+}
+section .infos .card.green {
+  background: #c1e1c1;
+}
+section .infos .card.red {
+  background: #faa0a0;
+}
+section .infos .card.yellow {
+  background: #fff5c4;
+}
+section .infos .card.large {
+  width: 350px !important;
+  height: 70px !important;
+}/*# sourceMappingURL=styles.css.map */

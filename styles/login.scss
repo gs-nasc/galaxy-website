@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    // background: rgb(213, 39, 255);
+    // background: linear-gradient(160deg, rgba(213, 39, 255, 1) 0%, rgba(137, 0, 255, 1) 83%);
+
+    background: rgb(95,10,135);
+    background: linear-gradient(160deg, rgba(95,10,135,1) 0%, rgba(164,80,139,1) 83%);
+
+    width: 100vw;
+    min-height: 100vh;
+
+    font-family: 'Montserrat', sans-serif;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+// LOGIN PAGE
+.rgb-thing {
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+		#0000ff, #00ff00,#ffff00, #ff0000);
+	background-size: 400%;
+    width: 400px;
+    height: 6px;
+
+    text-align: center;
+
+    animation: roll 10s linear infinite;
+}
+section#login {
+    background: #222;
+    width: 400px;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    padding: 50px 0;
+
+    position: relative;
+
+    span.title {
+        color: white;
+        font-size: 14px;
+
+        position: absolute;
+
+        top: 5px;
+    }
+    
+    img {
+        max-width: 200px;
+        height: auto;
+    }
+
+    form {
+        text-align: center;
+        width: 300px;
+        .input-area {
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            label {
+                color: white;
+                margin-bottom: 5px;
+            }
+            input {
+                background: transparent;
+                height: 30px;
+                border: rgb(213, 39, 255) 1px solid;
+
+                border-radius: 5px;
+            }
+            margin-bottom: 10px;
+        }
+        span {
+            color: white;
+            font-size: 12px;
+
+            a {
+                color: white;
+            }
+        }
+
+        button {
+            height: 35px;
+            border-radius: 5px;
+            border: none;
+            padding: 5px 10px;
+            margin-top: 20px;
+
+            cursor: pointer;
+        
+            &.submit {
+                background: rgb(213, 39, 255);
+            }
+            &.discord {
+                background: #7289da;
+            }
+        }
+    }
+}
+@keyframes roll {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
